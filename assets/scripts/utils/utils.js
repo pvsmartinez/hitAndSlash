@@ -1,5 +1,5 @@
 module.exports = {
-  enum: function(a) {
+  enum: function Enum(a){
     let i = Object
       .keys(a)
       .reduce((o,k)=>(o[a[k]]=k,o),{});

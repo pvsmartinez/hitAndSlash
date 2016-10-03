@@ -1,11 +1,14 @@
-const weapons = require('weapons').weapons;
-const actionKind = require('weapons').actionKind;
+const weapons = require('weaponList').weapons;
+const actionKind = require('weaponList').actionKind;
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-      side: 1,
+      side: {
+        default: 1,
+        visible: false,
+      },
       kind: {
         default: 1,
         tooltip: "weapon kind. 0 = shield, 1 = sword"
@@ -24,9 +27,6 @@ cc.Class({
         default:
           this.weapon = weapons.sword;
       }
-    },
-
-    idle: function () {
       this.node.rotation = this.side * this.weapon.idlePosition;
     },
 
