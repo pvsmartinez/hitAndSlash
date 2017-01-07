@@ -208,7 +208,15 @@
     "node": {
       "__id__": 4
     },
-    "_enabled": true
+    "_enabled": true,
+    "units": [
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 23
+      }
+    ]
   },
   {
     "__type__": "cc.Node",
